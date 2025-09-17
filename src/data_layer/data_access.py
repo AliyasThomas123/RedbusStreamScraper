@@ -18,7 +18,7 @@ class RedBusData:
             password=DB_PASSWORD  , 
             database=database ,
             port=3306,
-            connect_timeout=20   
+            connect_timeout=30 #changing timeout   
         )
         if not self.connection:
             return False
@@ -68,5 +68,9 @@ class RedBusData:
 
     def fetch_data(self, query):
         return self.execute_query(query,  fetch=True)
+    
+    def retrieve_bus_info():
+        bus_list = []
+        return bus_list
 
         
