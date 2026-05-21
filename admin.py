@@ -5,6 +5,7 @@ from src.data_extraction.scrapping_utils import WebScrap
 from src.data_layer.data_access import RedBusData
 from src.redbus_constants import RED_BUS_URL , DB_SCHEMA , DBNAME ,RED_BUS_INFO ,RED_BUS_MAIN_TABLE
 table_name = "redbusdata3" #1001 : due to chnging table name.
+admin_defualt_password="admin123"  #admin password assigned
 class GenerateRedbusData:
     def __init__(self) :
          
